@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Personal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1000f0;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            margin: 0 auto;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-top: 80px; /* Para no ocultar el contenido bajo el header fijo */
+        }
+
+        h2 {
+            border-bottom: 3px solid #0070f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .proyecto {
+            border-bottom: 1px solid #ddd;
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+        }
+
+        .proyecto h3 {
+            margin: 0 0 0.5rem 0;
+            color: #ac00f0;
+        }
+
+        .proyecto p {
+            margin: 0 0 0.5rem 0;
+            color: #666;
+        }
+
+        .proyecto a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .proyecto a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background: #0004f0;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #5e4318;
+        }
+
+        footer {
+            background: #333333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            margin-top: 2rem;
+        }
+
+        .form-mensaje {
+            display: none;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        .form-mensaje.exito {
+            background: #d4edda;
+            color: #18af3b5b;
+        }
+
+        .form-mensaje.error {
+            background: #f8d7da;
+            color: #ac00ac;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+
+            section {
+                padding: 2rem;
+                margin-top: 60px; /* Ajustar margen superior para pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio </h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyecto">
+            <h3>Plataforma de Gestión de Recursos para Empresas</h3>
+            <p>El proyecto "Plataforma de Gestión de Recursos para Empresas" es una solución integral diseñada para optimizar la administración de recursos empresariales. La plataforma proporciona herramientas para la gestión de inventarios, la asignación de recursos humanos, la planificación de proyectos, y el seguimiento de gastos y presupuestos. Este sistema modular y escalable está orientado a mejorar la eficiencia operativa, reducir costos y facilitar la toma de decisiones informadas dentro de una empresa.</p>
+            <a href="#">Ver más</a>
+        </div>
+        <div class="proyecto">
+            <h3>Sistema de Gestión de Inventarios y Ventas para Minoristas</h3>
+            <p>El "Sistema de Gestión de Inventarios y Ventas para Minoristas" es una solución integral diseñada para ayudar a los minoristas a administrar sus inventarios y operaciones de ventas de manera eficiente. El sistema proporciona herramientas avanzadas para el seguimiento de productos, la gestión de pedidos, la generación de reportes de ventas y la integración con sistemas de punto de venta (POS). Su objetivo principal es optimizar la gestión de inventarios, reducir costos y mejorar la experiencia de los clientes.</p>
+            <a href="#">Ver más</a>
+        </div>
+       
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Desarrollo Web</li>
+            <li>Diseño Gráfico</li>
+            <li>Programación en Python</li>
+            <li>Gestión de Proyectos</li>
+            <li>Programacion en Java</li>
+            
+        </ul>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="formularioContacto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="mensajeFormulario" class="form-mensaje"></div>
+    </section>
+
+    
+
+    <script>
+        document.getElementById('formularioContacto').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previene el envío del formulario
+
+            // Captura los valores del formulario
+            const nombre = document.getElementById('nombre').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const mensaje = document.getElementById('mensaje').value.trim();
+            
+            // Obtén el contenedor para el mensaje de éxito o error
+            const mensajeFormulario = document.getElementById('mensajeFormulario');
+            
+            // Validación básica
+            if (nombre === '' || email === '' || mensaje === '') {
+                mensajeFormulario.textContent = 'Todos los campos son obligatorios.';
+                mensajeFormulario.className = 'form-mensaje error';
+                mensajeFormulario.style.display = 'block';
+                return;
+            }
+
+            if (!validateEmail(email)) {
+                mensajeFormulario.textContent = 'Por favor, ingresa un correo electrónico válido.';
+                mensajeFormulario.className = 'form-mensaje error';
+                mensajeFormulario.style.display = 'block';
+                return;
+            }
+
+            // Simular el envío del formulario (en un entorno real, aquí se enviaría al servidor)
+            mensajeFormulario.textContent = Gracias, ${nombre}! Tu mensaje ha sido enviado.;
+            mensajeFormulario.className = 'form-mensaje exito';
+            mensajeFormulario.style.display = 'block';
+            
+            // Limpiar el formulario
+            document.getElementById('formularioContacto').reset();
+        });
+
+        // Función para validar el formato del email
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+    </script>
+</body>
+</html>
